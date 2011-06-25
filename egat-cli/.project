@@ -1,0 +1,21 @@
+<projectDescription>
+  <name>egat-cli</name>
+  <comment>Empirical Game Analysis Toolkit command line interface. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>dominance</project>
+    <project>egat-egame</project>
+    <project>egat-egame-xml</project>
+    <project>egat-game</project>
+    <project>egat-game-xml</project>
+    <project>min-form</project>
+    <project>replicator-dynamics</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

@@ -1,0 +1,15 @@
+<classpath>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-cli/2.0-SNAPSHOT/commons-cli-2.0-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-math/2.0/commons-math-2.0.jar"/>
+  <classpathentry kind="src" path="/dominance"/>
+  <classpathentry kind="src" path="/egat-egame"/>
+  <classpathentry kind="src" path="/egat-egame-xml"/>
+  <classpathentry kind="src" path="/egat-game"/>
+  <classpathentry kind="src" path="/egat-game-xml"/>
+  <classpathentry kind="var" path="M2_REPO/lpsolve/lpsolve/5.5.0/lpsolve-5.5.0.jar"/>
+  <classpathentry kind="src" path="/min-form"/>
+  <classpathentry kind="src" path="/replicator-dynamics"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+</classpath>

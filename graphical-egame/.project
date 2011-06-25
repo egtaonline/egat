@@ -1,0 +1,18 @@
+<projectDescription>
+  <name>graphical-egame</name>
+  <comment>Empirical Game Analysis Toolkit - Graphical empirical game package. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>egat-egame</project>
+    <project>egat-game</project>
+    <project>egat-game-xml</project>
+    <project>graphical-game</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
