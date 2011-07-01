@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.cli;
-
+import egat.game.*;
 import egat.cli.CommandProcessingException;
 import egat.gamexml.SymmetricGameHandler;
 import egat.gamexml.StrategicGameHandler;

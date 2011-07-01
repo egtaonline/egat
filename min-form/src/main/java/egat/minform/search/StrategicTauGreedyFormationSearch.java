@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.minform.search;
-
+import egat.game.*;
 import egat.minform.StrategicRationalizableFinder;
 
 import java.util.*;

@@ -18,6 +18,7 @@
  */
 package egat.cli.strategyregret;
 
+import egat.game.*;
 import egat.cli.AbstractGameCommandHandler;
 import egat.cli.CommandProcessingException;
 import egat.gamexml.ProfileHandler;

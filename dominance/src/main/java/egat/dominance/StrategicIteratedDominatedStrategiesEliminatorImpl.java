@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.dominance;
-
+import egat.game.*;
 import java.util.Set;
 import java.util.HashSet;
 

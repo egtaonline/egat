@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.cli.regret;
-
+import egat.game.*;
 import java.io.PrintStream;
 import java.util.Map;
 

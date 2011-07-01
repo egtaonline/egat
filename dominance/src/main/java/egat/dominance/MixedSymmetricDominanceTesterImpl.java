@@ -17,6 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.dominance;
+import egat.game.*;
 
 import static egat.dominance.DominanceUtils.*;
 
@@ -295,4 +296,5 @@ public class MixedSymmetricDominanceTesterImpl implements SymmetricDominanceTest
 
         return subOutcomes;
     }
+
 }

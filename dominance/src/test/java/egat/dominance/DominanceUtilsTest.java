@@ -25,7 +25,7 @@ import org.xml.sax.SAXException;
 import static egat.dominance.DominanceUtils.*;
 import egat.gamexml.SymmetricGameHandler;
 import egat.gamexml.StrategicGameHandler;
-
+import egat.game.*;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.parsers.ParserConfigurationException;

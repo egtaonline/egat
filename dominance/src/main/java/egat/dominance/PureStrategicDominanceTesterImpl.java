@@ -19,7 +19,7 @@
 package egat.dominance;
 
 import static egat.dominance.DominanceUtils.*;
-
+import egat.game.*;
 /**
  * @author Patrick Jordan
  */

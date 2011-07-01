@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.cli.regret;
-
+import egat.game.*;
 import egat.cli.CommandProcessingException;
 import egat.cli.AbstractGameCommandHandler;
 import org.apache.commons.cli2.builder.CommandBuilder;

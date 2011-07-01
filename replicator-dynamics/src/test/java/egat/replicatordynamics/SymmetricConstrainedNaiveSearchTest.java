@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.replicatordynamics;
-
+import egat.game.*;
 import org.junit.Test;
 import static org.junit.Assert.assertNotNull;
 import org.xml.sax.SAXException;

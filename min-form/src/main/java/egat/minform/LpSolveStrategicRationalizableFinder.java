@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.minform;
-
+import egat.game.*;
 import java.util.*;
 
 import lpsolve.LpSolveException;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="dominance/src/main/java"/>
+	<classpathentry kind="src" path="dominance/src/test/java"/>
+	<classpathentry kind="src" path="egat-cli/src/main/java"/>
+	<classpathentry kind="src" path="egat-egame-xml/src/main/java"/>
+	<classpathentry kind="src" path="egat-egame-xml/src/test/java"/>
+	<classpathentry kind="src" path="egat-egame/src/main/java"/>
+	<classpathentry kind="src" path="egat-egame/src/test/java"/>
+	<classpathentry kind="src" path="egat-game-xml/src/main/java"/>
+	<classpathentry kind="src" path="egat-game/src/main/java"/>
+	<classpathentry kind="src" path="egat-game/src/test/java"/>
+	<classpathentry kind="src" path="graphical-egame/src/main/java"/>
+	<classpathentry kind="src" path="graphical-game/src/main/java"/>
+	<classpathentry kind="src" path="graphical-game/src/test/java"/>
+	<classpathentry kind="src" path="min-form/src/main/java"/>
+	<classpathentry kind="src" path="min-form/src/test/java"/>
+	<classpathentry kind="src" path="replicator-dynamics/src/main/java"/>
+	<classpathentry kind="src" path="replicator-dynamics/src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/commons-math-2.2/commons-math-2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/EGAT_Requirements/ssj.jar"/>
+	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/EGAT_Requirements/lpsolve55j.jar"/>
+	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/EGAT_Requirements/lpsolve-5.5.0.jar"/>
+	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/EGAT_Requirements/Jama-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/EGAT_Requirements/commons-cli-2.0-20090209.001052-1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

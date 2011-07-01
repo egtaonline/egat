@@ -17,11 +17,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.cli.eminform;
-
+import egat.game.*;
 import egat.cli.AbstractGameCommandHandler;
 import egat.cli.CommandProcessingException;
-import egat.minform.LpSolveSymmetricRationalizableFinder;
-import egat.minform.LpSolveStrategicRationalizableFinder;
+import egat.minform.*;
+import egat.minform.search.*;
 import egat.gamexml.SymmetricGameWriter;
 import egat.gamexml.StrategicGameWriter;
 import org.apache.commons.cli2.builder.CommandBuilder;

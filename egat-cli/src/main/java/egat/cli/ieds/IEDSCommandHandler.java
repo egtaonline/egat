@@ -17,9 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package egat.cli.ieds;
-
+import egat.game.*;
 import egat.cli.CommandProcessingException;
 import egat.cli.AbstractGameCommandHandler;
+import egat.dominance.*;
 import egat.gamexml.SymmetricGameWriter;
 import egat.gamexml.StrategicGameWriter;
 import org.apache.commons.cli2.Option;

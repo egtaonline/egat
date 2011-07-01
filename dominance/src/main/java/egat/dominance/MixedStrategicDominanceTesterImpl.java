@@ -22,6 +22,7 @@ import lpsolve.LpSolve;
 import lpsolve.LpSolveException;
 
 import static egat.dominance.DominanceUtils.*;
+import egat.game.*;
 
 import java.util.*;
 

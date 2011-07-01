@@ -21,6 +21,8 @@ package egat.dominance;
 import java.util.Set;
 import java.util.HashSet;
 
+import egat.game.*;
+
 /**
  * @author Patrick Jordan
  */
