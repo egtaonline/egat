@@ -52,7 +52,7 @@ public class KFoldsSymmetricValidatorTest {
         KFoldsSymmetricValidator validator = new KFoldsSymmetricValidator(2);
         double rmse = validator.crossValidate(factory, observer);
 
-        Assert.assertEquals(rmse, 1.0);
+        Assert.assertEquals(rmse, 1.0, 0.00001);
     }
 
     @Test(expected = RuntimeException.class)

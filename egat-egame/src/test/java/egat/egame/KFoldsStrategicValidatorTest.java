@@ -56,7 +56,7 @@ public class KFoldsStrategicValidatorTest {
         KFoldsStrategicValidator validator = new KFoldsStrategicValidator(2);
         double rmse = validator.crossValidate(factory,observer);
 
-        Assert.assertEquals(rmse,1.0);
+        Assert.assertEquals(rmse,1.0, 0.0001);
     }
 
     @Test(expected=RuntimeException.class)

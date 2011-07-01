@@ -17,6 +17,7 @@
 	<classpathentry kind="src" path="min-form/src/test/java"/>
 	<classpathentry kind="src" path="replicator-dynamics/src/main/java"/>
 	<classpathentry kind="src" path="replicator-dynamics/src/test/java"/>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/commons-math-2.2/commons-math-2.2.jar"/>
 	<classpathentry kind="lib" path="/Users/bcassell/Desktop/Dropbox/workspace/Libraries/EGAT_Requirements/ssj.jar"/>
