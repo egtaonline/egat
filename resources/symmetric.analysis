@@ -1,0 +1,16 @@
+Analysis of /Users/bcassell/Desktop/egat/resources/symmetric.xml
+
+Pure Strategy NEs:
+[d, d]
+Regrets:
+	bob
+		c: -1.0
+	alice
+		c: -1.0
+
+
+Symmetric Mixed Strategy NEs:
+{d=1.0, c=0.0}
+Regrets:
+		d: 0.0
+		c: -1.0
