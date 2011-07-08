@@ -691,9 +691,15 @@ public class SymmetricConstrainedFeasibleAmoebaSearch {
             }
 
             Outcome outcome = Games.createOutcome(players, playerActions);
-
-            Payoff p = game.payoff(outcome);
-            pm.setPayoff(i, p.getPayoff(players[0]).getValue());
+            
+            try{
+            	Payoff p = game.payoff(outcome);
+            	pm.setPayoff(i, p.getPayoff(players[0]).getValue());
+            }
+            catch (NonexistentPayoffException e){
+            	pm.setPayoff(i, -Double.MAX_VALUE);
+            }
+            
         }
 
 

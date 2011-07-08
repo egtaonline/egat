@@ -96,13 +96,21 @@ public class PureSymmetricDominanceTesterImpl implements SymmetricDominanceTeste
         }
 
         actions[index] = baseAction;
-
-        double basePayoff = game.payoff(Games.createOutcome(players,actions)).getPayoff(players[index]).getValue();
-
+        double basePayoff = 0.0;
+        try{
+        	basePayoff = game.payoff(Games.createOutcome(players,actions)).getPayoff(players[index]).getValue();
+        }
+        catch (NonexistentPayoffException e){
+        	return false;
+        }
         actions[index] = deviantAction;
-
-        double deviantPayoff = game.payoff(Games.createOutcome(players,actions)).getPayoff(players[index]).getValue();
-
+        double deviantPayoff = 0.0;
+        try{
+        	deviantPayoff = game.payoff(Games.createOutcome(players,actions)).getPayoff(players[index]).getValue();
+        }
+        catch (NonexistentPayoffException e){
+        	return true;
+        }
         return basePayoff >= deviantPayoff;
     }
 

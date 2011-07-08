@@ -94,12 +94,11 @@ public class MixedSymmetricDominanceTesterImpl implements SymmetricDominanceTest
 
 
             for (int i = 0; i < subGameSize; i++) {
-                double payoffAction = getPayoff(action, subOutcomes.get(i), players, actions, game, playerIndex);
+            	double payoffAction = getPayoff(action, subOutcomes.get(i), players, actions, game, playerIndex);
 
                 for (int j = 0 ; j < playerActions.length; j++) {
 
                     double payoffDeviant = getPayoff(playerActions[j], subOutcomes.get(i), players, actions, game, playerIndex);
-
                     row[j] = payoffDeviant;
                 }
 

@@ -1035,6 +1035,15 @@ public final class Games {
         return epsilon;
     }
 
+	public static double conditionalRegret(Outcome outcome, StrategicGame game) {
+        double epsilon = 0.0;
+
+        for (Player player : game.players()) {
+            epsilon = Math.max(epsilon, conditionalPlayerRegret(game, outcome, player));
+        }
+
+        return epsilon;
+	}
 
     public static double regret(Profile profile, StrategicGame game) {
         double epsilon = 0.0;
@@ -1074,6 +1083,44 @@ public final class Games {
         return regret;
     }
 
+    public static double conditionalPlayerRegret(StrategicGame game, Outcome outcome, Player player) {
+        Player[] players = outcome.players().toArray(new Player[0]);
+        Action[] actions = new Action[players.length];
+        double regret = 0.0;
+
+        int playerIndex = -1;
+        for (int i = 0; i < players.length; i++) {
+            if (players[i].equals(player)) {
+                playerIndex = i;
+            } else {
+                actions[i] = outcome.getAction(players[i]);
+            }
+        }
+        double originalPayoff = 0.0;
+        try{
+        	originalPayoff = game.payoff(outcome).getPayoff(player).getValue();
+        }
+    	catch(NonexistentPayoffException e){
+        	return Double.MAX_VALUE;
+    	}
+
+        for (Action action : game.getActions(player)) {
+
+        	actions[playerIndex] = action;
+        	try{
+        		double deviatingPayoff = game.payoff(Games.createOutcome(players, actions)).getPayoff(player).getValue();
+        		regret = Math.max(regret, deviatingPayoff - originalPayoff);
+        	}
+        	catch(NonexistentPayoffException e){
+            	
+        	}
+
+        }
+
+
+        return regret;
+    }
+    
     public static double playerRegret(StrategicGame game, Profile profile, Player player) {
         Player[] players = profile.players().toArray(new Player[0]);
         Strategy[] strategies = new Strategy[players.length];
@@ -1120,7 +1167,7 @@ public final class Games {
 
         return deviatingPayoff - originalPayoff;
     }
-
+    
     public static double playerGain(StrategicGame game, Profile profile, Player player, Strategy strategy) {
         Player[] players = profile.players().toArray(new Player[0]);
         Strategy[] strategies = new Strategy[players.length];
@@ -1201,4 +1248,5 @@ public final class Games {
 
         return PayoffFactory.createPayoff(players, payoffs);
     }
+
 }
