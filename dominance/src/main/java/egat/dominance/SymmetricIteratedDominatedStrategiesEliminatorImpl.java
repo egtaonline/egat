@@ -18,6 +18,9 @@
  */
 package egat.dominance;
 import egat.game.*;
+
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Set;
 import java.util.HashSet;
 
@@ -44,6 +47,7 @@ public class SymmetricIteratedDominatedStrategiesEliminatorImpl implements Symme
             flag = false;
 
             Action[] actions = reduced.getActions().toArray(new Action[0]);
+            Collections.shuffle(Arrays.asList(actions));
             for (Action action : actions) {
                 if (strategicDominanceTester.isDominated(action, reduced)) {
                     flag = true;

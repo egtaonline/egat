@@ -19,11 +19,26 @@
 package egat.dominance;
 
 import static egat.dominance.DominanceUtils.*;
+
+import java.io.IOException;
+import java.io.Writer;
+
 import egat.game.*;
 /**
  * @author Patrick Jordan
  */
+
 public class PureSymmetricDominanceTesterImpl implements SymmetricDominanceTester {
+	private Writer writer;
+	
+	public PureSymmetricDominanceTesterImpl(){
+		writer = null;
+	}
+	
+	public PureSymmetricDominanceTesterImpl(Writer inWriter){
+		writer = inWriter;
+	}
+	
     public boolean isDominated(Action action, SymmetricGame game) {
         Player[] players = game.players().toArray(new Player[0]);
         Action[] actions = new Action[players.length];
@@ -31,8 +46,9 @@ public class PureSymmetricDominanceTesterImpl implements SymmetricDominanceTeste
         int playerIndex = 0;
 
         SymmetricMultiAgentSystem reduced = createPlayerReducedSymmetricSimulation(players[playerIndex], game);
-
-        for (Action a : game.getActions()) {
+        Action[] testActions = new Action[game.getActions().size()];
+        game.getActions().toArray(testActions);
+        for (Action a : testActions) {
 
             if(a.equals(action)) {
                 continue;
@@ -48,6 +64,13 @@ public class PureSymmetricDominanceTesterImpl implements SymmetricDominanceTeste
             }
 
             if (dominated) {
+            	if (writer != null)
+            		try {
+            			writer.append("\n"+action+" is dominated by "+a+"\n");
+            			writer.flush();
+            		} catch (IOException e) {
+            			e.printStackTrace();
+            		}
                 return true;
             }
         }
