@@ -1248,5 +1248,14 @@ public final class Games {
 
         return PayoffFactory.createPayoff(players, payoffs);
     }
+    
+    public static boolean isAWeakBestResponse(Player p, Outcome o, Action a, StrategicGame g){
+    	double a_value = g.payoff(Games.createOutcomeDeviation(o, p, a)).getPayoff(p).getValue();
+    	for(Action act: g.getActions(p)){
+    		if(g.payoff(Games.createOutcomeDeviation(o, p, act)).getPayoff(p).getValue() > a_value)
+    			return false;
+    	}
+    	return true;
+    }
 
 }
